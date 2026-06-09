@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* LEAF WRAPPER */
 .leaf-wrapper {
     position: absolute;
@@ -45,4 +46,128 @@
 .leaf-wrapper:hover .leaf-data {
     opacity: 1;
     visibility: visible;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #f8f8f6;
+  font-family: sans-serif;
+}
+
+/* MAIN */
+
+.tree-container {
+  width: 100%;
+  height: 100vh;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* LEAF */
+
+.leaf-wrapper {
+  position: absolute;
+
+  cursor: pointer;
+}
+
+/* DOT */
+
+.leaf {
+  font-size: 55px;
+  position: absolute;
+  color: #0b6b43;
+
+  line-height: 0;
+
+  font-weight: bold;
+}
+
+/* FALL */
+
+.fall {
+  animation: leafFall 2.5s ease forwards;
+}
+
+/* TEXT */
+
+.leaf-data {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+
+  
+
+  border-radius: 10px;
+
+  background: rgba(220, 220, 220, 0.608);
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+  font-size: 16px;
+
+  text-align: center;
+
+  animation: showText 0.5s ease forwards;
+
+  animation-delay: 2.2s;
+
+  opacity: 0;
+}
+
+/* FALL MOTION */
+
+@keyframes leafFall {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  20% {
+    transform: translateX(-10px) translateY(70px) rotate(0deg);
+  }
+
+  40% {
+    transform: translateX(10px) translateY(130px) rotate(0deg);
+  }
+
+  60% {
+    transform: translateX(-5px) translateY(200px) rotate(0deg);
+  }
+
+  80% {
+    transform: translateX(8px) translateY(260px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateY(300px) rotate(0deg);
+  }
+}
+
+/* SHOW TEXT */
+
+@keyframes showText {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    z-index: 2;
+    transform: translateY(0px);
+  }
+>>>>>>> 1ed3150eae84ca6a858a628e1274e57c1039e7ed
 }
