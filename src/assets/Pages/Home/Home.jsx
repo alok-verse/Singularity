@@ -40,11 +40,7 @@ const Home = () => {
 
       <div className="tree-section">
         {<Tree/>}
-<<<<<<< HEAD
         <img src="tree2.svg" alt="" />
-=======
-        <img src="tree2.png" alt="" />
->>>>>>> 1ed3150eae84ca6a858a628e1274e57c1039e7ed
       </div>
     </section>
   );
